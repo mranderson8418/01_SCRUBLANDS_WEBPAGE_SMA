@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* =================================
+Desktop Styles: 769px and greater
+=================================
+*/
+@media only screen and (min-width: 769px) {
+	/* ul.submenu {
+    background: transparent;
+    box-shadow: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+  } */
+
+	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
+	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover {
+		display: block;
+		min-width: auto;
+	}
+
+	ul.horizontal-mainmenu-dropdown-dropdown-contents {
+		background: transparent;
+		box-shadow: none;
+		display: none;
+		position: absolute;
+
+		min-width: 769px;
+		max-width: auto;
+	}
+
+	body {
+		width: 100%;
+		min-width: 769px;
+		font-size: 1.5em;
+		background-color: rgb(73, 58, 49, 0.8);
+		box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
+		margin: auto auto;
+		color: white;
+		z-index: 1;
+		min-height: 100vh;
+	}
+
+	img#inlineImage {
+		float: right;
+		padding: 25px;
+		width: 450px;
+	}
+
+
+
+
+
+
+}

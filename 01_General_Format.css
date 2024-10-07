@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "TwoShotsCleanFull";
+	/*a name to be used later*/
+	src: url("Vozzy - Two Shots Clean Full.WOFF2") format("woff2");
+	/*URL to font*/
+}
+
+@font-face {
+	font-family: "TwoShotsCleanFullOTF";
+	/*a name to be used later*/
+	src: url("Vozzy - Two Shots Clean Full.otf") format("oft");
+	/*URL to font*/
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a[target="_blank"] {
+	background-color: red;
+}
+
+a[href="#"] {
+	background-color: red;
+}
+
+ul.horizontal-mainmenu-dropdown-dropdown-contents[href="#"] {
+	background-color: red;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#banner {
+	display: block;
+	position: relative;
+	/* border: solid 15px yellow; */
+	width:100%;
+}
+
+/* Background Styles */
+
+
+
+body {
+	margin: auto;
+	padding: auto;
+	background-color: rgb(73, 58, 49, 0.6);
+	/* background-color:rgb(85, 124, 86); */
+	box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
+	background-size: cover;
+	min-height: 100vh;
+	min-width: 1000px;
+	max-width: 1500px;
+	font-size: 20px;
+}
+
+
+html {
+	
+	display: flex;
+	margin: auto;
+	padding: auto;
+	 background-image: url("background.jpg");
+	 
+	 /* background-color:#33372C; */
+	 /* background-color:rgb(255, 136, 91); */
+	background-size: cover;
+	background-repeat: repeat-y;
+	/* background-attachment: fixed; */
+	background-position: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+}
+
+
+ul.horizontal-mainmenu {
+	background-color: rgb(73, 58, 49, 0.8);
+	display: block;
+	color: white;
+	font-size: 55px;
+	font-family: TwoShotsCleanFull;
+	text-align: center;
+	/* padding: 25px; */
+	min-height: 150px;
+	max-height: 150px;
+}
+
+.horizontal-mainmenu-dropdown {
+	color: red;
+	padding: 25px;
+}
+
+/* Header Topography */
+body > header > a > img {
+	display: block;
+	width: 100%;
+	position: center;
+	margin: auto;
+}
+
+/* Pseudo Elements*/
+/* p::before {
+	content: url("greenTriangle.png");
+	width: 10px;
+
+	height: 10px;
+} */
+
+/* p::after {
+	content: url("greenTriangle.png");
+} */
+
+p:first-child {
+	color: white;
+}
+
+body > section > div > p:first-line {
+	color: white;
+}
+
+a:first-child {
+	color: white;
+}
+
+/* Horizonal Navigation Styles */
+nav.horizontal > ul > li > a {
+	color: blue;
+	border: none;
+	max-height: 200px;
+	min-height: 100%;
+}
+
+ul.horizontal-mainmenu-dropdown-dropdown-contents {
+	display: none;
+}
+
+a.horizontal-mainmenu-dropdown {
+	position: relative;
+	display: none;
+	text-align: center;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 0.2em;
+	color: blue;
+	line-height: 2.5em;
+	margin: none;
+	padding: none;
+}
+
+nav.horizontal-mainmenu > dropdown:focus + ul.horizontal-mainmenu-dropdown-dropdown-contents {
+	display: block;
+	color: blue;
+	border: none;
+}
+
+/* okay */
+ul.horizontal-mainmenu-dropdown-dropdown-contents li a [href="#"] {
+	color: blue;
+	border: none;
+
+	width: 100%;
+	z-index: 1;
+	background-color: rgb(73, 58, 49);
+}
+
+ul.horizontal-mainmenu-dropdown-dropdown-contents {
+	display: none;
+	min-width: 100%;
+	font-size: 10px;
+	border: none;
+}
+
+a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
+ul.horizontal-mainmenu-dropdown-dropdown-contents:hover {
+	display: block;
+	color: blue;
+	border: none;
+	min-width: auto;
+	max-width: auto;
+	min-height: 150px;
+	max-height: 150px;
+	margin: auto;
+	min-height: 150px;
+	max-height: 150px;
+	float: left;
+	min-height: 150px;
+	max-height: 150px;
+}
+
+/* nav > ul > ul.horizontal-mainmenu-dropdown-contents {
+  display: none;
+} */
+
+.horizontal li {
+	background-color: rgb(73, 58, 49, 0.8);
+	/* border: solid 5px yellow; */
+	height: 100%;
+	min-height: 100%;
+}
+
+nav.horizontal {
+	display: block;
+	background-color: rgb(73, 58, 49, 0.8);
+	min-height: 3.5em;
+	margin: auto;
+	/* font-size: 2em; */
+}
+
+nav.horizontal li {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	line-height: 5em;
+	font-size: 15px;
+	text-transform: uppercase;
+	background-color: rgb(73, 58, 49, 0.8);
+}
+
+nav.horizontal a {
+	display: block;
+	text-align: center !important;
+	color: white;
+	/* font-size: large; */
+	text-transform: uppercase;
+	position: relative;
+	margin: auto;
+	padding: auto;
+	border-radius: 0.5em;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+}
+
+a.horizontal-mainmenu-dropdown a:link {
+	background-color: rgb(73, 58, 49, 0.5);
+	color: white;
+	font-size: 2px;
+	padding: 50px;
+	text-align: center;
+	padding: 50px;
+}
+
+/* Pulldown Menu Styles */
+nav.horizontal a:visited,
+nav.horizontal a:link {
+	/* color: rgb(182, 150, 81); */
+	color: white;
+	/* border: 5px solid rgb(182, 150, 81); */
+	width: 100%;
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+	padding: 50px;
+	margin: none;
+	min-height: 150px;
+	max-height: 150px;
+}
+
+nav.horizontal a:hover,
+nav.horizontal a:active {
+	background-color: rgb(235, 166, 77);
+	color: red;
+	padding: 50px;
+	margin: 0px;
+}
+
+ul.horizontal-mainmenu-dropdown-dropdown-contents {
+	display: none;
+	position: absolute;
+	/* background-color: #f9f9f9; */
+	min-width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	margin: 0px;
+	border: none;
+}
+
+/* Home Page Image Layouts */
+
+.image2 img {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	min-width: 100px;
+	max-width: 400px;
+}
+
+div#image3 {
+	display: inline-block;
+	max-width: 400px;
+}

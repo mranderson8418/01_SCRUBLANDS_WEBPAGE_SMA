@@ -19,7 +19,6 @@
 	padding: 0;
 }
 
-
 h1#button {
 	display: block;
 
@@ -94,49 +93,32 @@ button
 /* -------------------------------- */
 /* ------flexContainerBody-BarSoap---------*/
 /* -------------------------------- */
-div.flexContainerBody1-sectionTitle h1{
-	font-family: TwoShotsCleanFull;
-	font-size: 5em;
-	color: #b43b07;
-	text-align: center;
-	font-weight: normal;
-	text-shadow: 5px 5px 10px #201f1f;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0px;
-	width: 100%;
-	height: 100%;
-	line-height: 1 em;
-}
 
-.flexContainerBody-BarSoap {
+
+
+
+section.flexContainerBody-BarSoap {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/* flex-basis: 200px; */
-	flex-grow: 0;
-	align-items: center;
-	/* justify-content: space-between; */
-	line-height: normal;
-	text-align: center;
-	flex-wrap: wrap;
-	width: 100;
-	padding: 0px;
-	/* border: 10px yellow solid; */
-	align-items: center;
-}
-.flexContainerBody-BarSoap > article {
 	max-width: 100%;
 	text-align: center;
 	padding: 0px;
-	/* flex-wrap:wrap; */
-	flex: 1;
+	align-items: center;
 	line-height: normal;
 	height: auto;
 	margin-top: 70px;
-	/* border: 10px red solid; */
+}
+
+article.flexContainerBody1 > div {
+	line-height: normal;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100%;
+	min-height: 100%;
+	padding: 0px;
+	border: 10px yellow solid;
+	align-items: center;
 }
 
 .flexContainerBody-BarSoap > article > div > h2 {
@@ -169,16 +151,15 @@ div.flexContainerBody1-sectionTitle h1{
 .flexContainerBody1 {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 400px;
-	flex-grow: 0;
 	align-items: center;
-	justify-content: center;
-	line-height: normal;
-	text-align: center;
-	width: 100%;
+	justify-content: space-around;
+	flex-direction: column;
+	margin-top: 2em;
+}
+
+.flexContainerBody1-title > h1 {
+	width: auto;
 	height: auto;
-	padding: 0px;
-	margin: 0px;
 }
 
 /*     */
@@ -187,50 +168,36 @@ div.flexContainerBody1-sectionTitle h1{
 	width: 100%;
 	text-align: center;
 	padding: 0px;
-	margin: 2em;
-	flex: 1;
+	margin: 0px;
 	line-height: normal;
-	max-height: 300px;
+
 	height: 100%;
 }
-
 .flexContainerBody1 > div > h1 {
 	text-align: center;
-	font-family: TwoShotsCleanFull;
-	text-shadow: 5px 5px 10px #201f1f;
-	font-size: 12em;
-	-webkit-text-stroke-width: 0.8px;
-	-webkit-text-stroke-color: white;
-	text-shadow: 8px 8px 20px black;
-	font-weight: normal;
-	color: #b43b07;
 	line-height: normal;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
 }
 
-.flexContainerBody1-logo1 {
-	flex: 1;
-	line-height: normal;
-	text-align: center;
-	padding: 50px;
-	margin: 50px;
-}
-
-.flexContainerBody1-logo1 img {
+.flexContainerBody1 > div > a > img {
 	text-align: center;
 	border-radius: 25px;
 	box-shadow: inset 0px 0px 3px teal, inset 0px 0px 10px teal, inset 0px 0px 20px teal, 0px 0px 25px 1px black;
 	max-width: 300px;
 	height: auto;
-	margin: 0px;
+	margin: 20px;
 
 	line-height: normal;
 }
 
-.flexContainerBody1-Quote h2 {
+.flexContainerBody1-Quote > h2 {
 	color: #b43b07;
 	font-family: TwoShotsCleanFull, Courier, monospace;
 	font-weight: normal;
-	font-size: 5em;
+
 	text-shadow: 8px 8px 20px black;
 	-webkit-text-stroke-width: 0.3px;
 	-webkit-text-stroke-color: white;
@@ -240,10 +207,14 @@ div.flexContainerBody1-sectionTitle h1{
 	margin: 0px;
 	line-height: normal;
 	text-align: center;
+	font-size: 0.5rem;
+	margin: 2rem;
+	text-align: center;
 }
 
-.flexContainerBody1-Quote {
-	text-align: center;
+.flexContainerBody1 .flexContainerBody1-title {
+	flex-grow: 1;
+	z-index: 1;
 }
 
 /* -------------------------------- */
@@ -278,20 +249,6 @@ div.flexContainerBody1-sectionTitle h1{
 	align-items: center;
 }
 
-h1#productList {
-	text-align: center;
-	font-family: TwoShotsCleanFull;
-	text-shadow: 5px 5px 10px #201f1f;
-	font-size: 15em;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: white;
-	text-shadow: 8px 8px 20px black;
-	font-weight: normal;
-	color: #b43b07;
-	line-height: normal;
-	margin: 30px;
-}
-
 h1#homepageTitle {
 	text-align: center;
 	font-family: TwoShotsCleanFull;
@@ -305,26 +262,17 @@ h1#homepageTitle {
 	line-height: normal;
 	margin: 30px;
 }
-/* div#scott1 > h1 {
-  color: red;
-} */
 
-/* .flexContainerBody2 div {
-  flex: 1;
-  line-height: normal;
-} */
-
-.blockContainerBody2 > h1 {
-	text-align: center;
+.blockContainerBody2 .blockContainerBody2-title > h1 {
 	font-family: TwoShotsCleanFull;
-	font-size: 5em;
+	font-size: 3em;
 	-webkit-text-stroke-width: 0.25px;
 	-webkit-text-stroke-color: white;
 	text-shadow: 8px 8px 20px black;
 	font-weight: normal;
 	color: #ffffff;
 	line-height: normal;
-	margin: 30px;
+	margin: 20px;
 	padding: none;
 	/* border: solid 5px yellow; */
 }
@@ -406,7 +354,24 @@ div > p {
 	text-align: center;
 	margin: none;
 	padding: none;
-	border: solid 5px yellow;
+	/* border: solid 5px yellow; */
+}
+
+.page-title > div {
+	justify-content: center;
+	align-items: center;
+	/* border: 10px yellow solid; */
+}
+
+.page-title div > a > img {
+	width: auto;
+	max-height: 300px;
+	display: block;
+	border-radius: 25px;
+	box-shadow: inset 0px 0px 3px teal, inset 0px 0px 10px teal, inset 0px 0px 20px teal, 0px 0px 25px 1px black;
+	/* border: 10px yellow solid; */
+	margin: auto;
+	padding: auto;
 }
 
 /* -------------------------------- */
@@ -476,6 +441,10 @@ Tablet Styles: 481px and greater
 ================================
 */
 @media only screen and (min-width: 481px) {
+	body {
+		border: solid 10px green;
+	}
+
 	.flexContainerBody1-sectionTitle {
 		font-family: TwoShotsCleanFull;
 		font-size: 5em;
@@ -494,8 +463,6 @@ Tablet Styles: 481px and greater
 	}
 
 	nav.horizontal {
-		min-height: 150px;
-		max-height: 150px;
 		text-align: center;
 	}
 
@@ -518,14 +485,13 @@ Tablet Styles: 481px and greater
 		max-height: 250px;
 	}
 
-	.flexContainerBody2-image1 img {
+	/* .flexContainerBody2-image1 a img {
 		float: right;
 		padding: 25px;
 		width: 600px;
-	}
+	} */
 
-
-	.flexContainerBody2.image1 img {
+	/* .flexContainerBody2.image1 img {
 		display: block;
 		position: relative;
 		margin-left: auto;
@@ -533,7 +499,7 @@ Tablet Styles: 481px and greater
 		width: 100%;
 		min-width: 100px;
 		max-width: 300px;
-	}
+	} */
 
 	img.flexContainerBody1-logo1 {
 		min-width: 50px;
@@ -555,5 +521,6 @@ Tablet Styles: 481px and greater
 		padding: 0px;
 		margin: 0px;
 		width: 450px;
+		border: solid 20px yellow;
 	}
 }

@@ -2,10 +2,9 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "../../../../PrintDrawingSearchAPI"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
 }
